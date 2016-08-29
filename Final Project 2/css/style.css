@@ -1,0 +1,291 @@
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+
+body { 
+ font-family: sans-serif; 
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px;
+ padding:0px;
+}
+
+
+#wrapper {
+  padding-left: 0;
+  transition: all 0.5s ease;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  width: 0;
+  height: 100%;
+  margin-right: 0;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, .7);
+  transition: all 0.5s ease;
+
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 100%;
+}
+
+.nav-button {
+  position: absolute;
+  color: black;
+  z-index: 1001;
+  width:100%;
+  height: 70px;
+  background-image: url(../images/banner2.jpg);
+  font-size: 45px;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  opacity: .8;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  width: 100%; 
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255, 1);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 25px;
+    line-height: 60px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+.list {
+  padding: 20px;
+  margin-bottom: 2px;
+}
+.image1 {
+  width:100%;
+}
+
+
+.introsection {
+  background-image: url(http://blogs.bmc.com/wp-content/uploads/2015/12/Advantages-of-Cloud-Computing-5-Benefits.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width:100%;
+  padding-top: 4%;
+  margin:auto;
+  text-align: center;
+}
+
+
+.homenavigation li {
+  color: white;
+  margin:auto;
+}
+
+.navsection  {
+  display: inline-block;
+  margin:auto;
+  border: .5px white;
+}
+
+.title1 {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+video {
+  width: 100%;
+  height:auto;
+  margin-top: 42px;
+}
+/*slideshow css*/
+* { box-sizing: border-box; }
+
+
+
+.how {
+  padding: 100px;
+  min-height: 800px;
+  float: left;
+  background-image: url(../images/bent.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:auto;
+  text-align: left;
+}
+
+.paragraph1 {
+  background-color: rgba(255,255,255,.7);
+  color:black;
+  padding: 30px;
+  width: 50%;
+  min-height:550px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  float: right;
+
+}
+.paragraph0 {
+  display:none;
+}
+.readmore, .readless {
+  text-align: right;
+  margin-top: 30px;
+}
+.readmore a, .readless a {
+  color: #043049;
+  font-weight: 600;
+}
+
+
+.hide {
+  display:none;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.paragraph2 {
+  background-color: rgba(255,255,255,.7);
+  color:black;
+  padding: 30px;
+  width: 50%;
+  min-height:550px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  float: left;
+
+}
+
+
+.why {
+  margin-top: 10px;
+  padding: 100px;
+  min-height: 800px;
+  float: left;
+  background-image: url(../images/cloudbuild.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin:auto;
+  text-align: left;
+}
+
+.analysis {
+  margin-top: 10px;
+  padding: 100px;
+  min-height: 800px;
+  float: right;
+  background-image: url(http://systemsurveyor.com/wp-content/uploads/2015/07/system-design-cloud-computing_small.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin:auto;
+  text-align: left;
+}
+
+.twitter {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-right: 25px
+ }
+
+ .facebook {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 25px;
+ }
+
+.footer {
+  background-image: url("images/hp07-bg27343d-engineered-systems-2408032.jpg");
+  height: 250px;
+  float: left;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-color: #D5E3E8;
+  color: white;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 30px;
+}
+
+a:active, a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .paragraph1 {
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .paragraph2 {
+    width: 90%;
+  }
+}
